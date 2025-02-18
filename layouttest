@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="css/layouttest.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left side: 8x8 grid with 'Map' beneath it -->
+        <div class="left-section">
+            <div class="grid-8x8">
+                <!-- Creating 8x8 grid using divs -->
+                <!-- Each div is a cell -->
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <!-- Repeat for remaining rows -->
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <!-- More rows up to 8x8 -->
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <p class="map-text">Map</p>
+        </div>
+        
+        <!-- Right side: 3x5 grid -->
+        <div class="right-section">
+            <div class="grid-3x5">
+                <!-- Creating 3x5 grid -->
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+        
+        <!-- Text box at the bottom -->
+        <div class="bottom-textbox">
+            <textarea placeholder="Enter your text here"></textarea>
+        </div>
+    </div>
+</body>
+</html>
