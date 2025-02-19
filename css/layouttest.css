@@ -1,70 +1,83 @@
-/* Basic styling */
 body {
+    font-family: AppleChicagoFont, sans-serif;
+    background-color: black;
+    color: #03A062;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
 }
-
+@font-face {
+    font-family: 'AppleChicagoFont';          /* Name to reference in your CSS */
+    src: url('../fonts/ChicagoFLF.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 .container {
     display: flex;
-    padding: 20px;
-    height: 100vh;
     justify-content: space-between;
-    align-items: flex-start;
-}
-
-.left-section {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    padding-left:1%;
+    padding-right:1%;
+    gap: 30px;
 }
-
-.right-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.grid-8x8, .grid-3x5 {
+.grid-left {
+    padding-left: 5px;
     display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(6, 50px);
     gap: 5px;
 }
-
-/* 8x8 Grid */
-.grid-8x8 {
-    grid-template-columns: repeat(8, 50px);
-    grid-template-rows: repeat(8, 50px);
-}
-
-.grid-3x5 {
+.grid-right {
+    display: grid;
     grid-template-columns: repeat(3, 50px);
-    grid-template-rows: repeat(5, 50px);
+    grid-template-rows: repeat(4, 50px);
+    gap: 5px;
 }
-
 .cell {
     width: 50px;
     height: 50px;
-    background-color: #ddd;
-    border: 1px solid #333;
+    background-color: #000000;
+    border: 1px solid #03A062;
 }
-
-/* Styling for the word "Map" */
-.map-text {
-    margin-top: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #03A062;
+.image-box {
+    width: 800px;
+    height: 400px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #03A062;
 }
-
-/* Styling for the text box at the bottom */
-.bottom-textbox {
-    width: 100%;
-    text-align: center;
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.bottom-section {
     margin-top: 20px;
+    text-align: middle;
+    margin-left: 5px;
+}
+.button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-textarea {
-    width: 80%;
-    height: 100px;
+button {
+    background-color: #03A062;
+    color: black;
     padding: 10px;
+    border: none;
+    cursor: pointer;
     font-size: 16px;
+    font-family: AppleChicagoFont;
+    width:450px;
+}
+
+button:hover {
+    background-color: #046C45;
 }

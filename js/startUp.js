@@ -12,7 +12,7 @@ function move() {
         clearInterval(id); // Stop the animation when it reaches 100%
         setTimeout(function() {
           // Redirect to the next page after the animation is complete
-          window.location.href = "test.html"; // Adjust to your desired target page
+          window.location.href = "layouttest.html"; // Adjust to your desired target page
         }, 500); // Optional delay (500ms) before redirecting for better user experience
       } else {
         width++;

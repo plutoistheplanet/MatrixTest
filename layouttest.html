@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid & Image Layout</title>
+    <link rel="stylesheet" href="css/layouttest.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Grid -->
+        <div class="grid grid-left">
+            <script>
+                for (let i = 0; i < 48; i++) {
+                    document.write('<div class="cell"></div>');
+                }
+            </script>
+        </div>
+
+        <!-- Center Image Box -->
+        <div class="image-box">
+            <img src="placeholder.png" alt="Game Image">
+        </div>
+
+        <!-- Right Grid -->
+        <div class="grid grid-right">
+            <script>
+                for (let i = 0; i < 15; i++) {
+                    document.write('<div class="cell"></div>');
+                }
+            </script>
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+        <p class="info-text">Choose your next action:</p>
+        <div class="button-column">
+            <button>Option 1</button>
+            <button>Option 2</button>
+            <button>Option 3</button>
+            <button>Option 4</button>
+        </div>
+    </div>
+
+</body>
+</html>
