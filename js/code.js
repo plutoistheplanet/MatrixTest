@@ -18,7 +18,7 @@ function maplbl() {
 }
 
 function openingScroll() {
-    const intro = "Welcome to the world of Blackrock City, this is a world full of intrigue and mystery...";
+    const intro = "Welcome to the world of Cyber City, this is a world full of intrigue and mystery...";
     typeWriter(intro);
 }
 

@@ -10,12 +10,16 @@
 
     <div class="container">
         <!-- Left Grid -->
-        <div class="grid grid-left">
-            <script>
-                for (let i = 0; i < 48; i++) {
-                    document.write('<div class="cell"></div>');
-                }
-            </script>
+        <div class="grid-container">
+            <p>Cyber City</p>
+            <p>Map</p>
+            <div class="grid grid-left">
+                <script>
+                    for (let i = 0; i < 48; i++) {
+                        document.write('<div class="cell"></div>');
+                    }
+                </script>
+            </div>
         </div>
 
         <!-- Center Image Box -->
@@ -24,25 +28,34 @@
         </div>
 
         <!-- Right Grid -->
-        <div class="grid grid-right">
-            <script>
-                for (let i = 0; i < 15; i++) {
-                    document.write('<div class="cell"></div>');
-                }
-            </script>
+        <div class="grid-container">
+            <p>Items</p>
+            <div class="grid grid-right">
+                <script>
+                    for (let i = 0; i < 15; i++) {
+                        document.write('<div class="cell"></div>');
+                    }
+                </script>
+            </div>
         </div>
     </div>
 
     <!-- Bottom Section -->
     <div class="bottom-section">
-        <p class="info-text">Choose your next action:</p>
-        <div class="button-column">
-            <button>Option 1</button>
-            <button>Option 2</button>
-            <button>Option 3</button>
-            <button>Option 4</button>
+        <div class="action-container">
+            <p class="info-text">Choose your next action:</p>
+            <div class="button-column">
+                <button>Attack</button>
+                <button>Question</button>
+                <button>Use Selected Item</button>
+                <button>Run</button>
+            </div>
         </div>
+        <p class="dialoguebox">Welcome to the matrix. Will you take the blue pill or the red pill? This is a land of mystery where
+            anything is possible and anything could be an illusion.
+            <br /><br /> You spot a man in a trench coat hungrily rummaging through the bins...but something isn't right...he looks...angry.
+            <br /><br /> What do you do? 
+        </p>
     </div>
-
 </body>
 </html>
