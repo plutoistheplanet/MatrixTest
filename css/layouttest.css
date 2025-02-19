@@ -95,3 +95,7 @@ button {
 button:hover {
     background-color: #046C45;
 }
+h1{
+    font-size:1.5em;
+    padding:0;
+}
