@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid & Image Layout</title>
     <link rel="stylesheet" href="css/layouttest.css">
+    <script src="js/code.js" defer></script>
 </head>
 <body>
 
@@ -30,13 +31,7 @@
         <!-- Right Grid -->
         <div class="grid-container">
             <p>Items</p>
-            <div class="grid grid-right">
-                <script>
-                    for (let i = 0; i < 15; i++) {
-                        document.write('<div class="cell"></div>');
-                    }
-                </script>
-            </div>
+            <div class="grid grid-right" id="inventory-grid"></div> 
         </div>
     </div>
 
