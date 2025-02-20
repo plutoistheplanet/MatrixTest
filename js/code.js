@@ -19,7 +19,9 @@ let inventory = [null, null, null, null, null, null, null, null, null, null, nul
 
 // Sample items
 const items = {
-    "can": "media/img//items/energycan.png"
+    "can": "media/img/items/energycan.png",
+    "page": "media/img/items/page.png",
+    "dagger": "media/img/items/dagger.png"
 };
 
 // Function to render the inventory grid
@@ -66,4 +68,5 @@ renderInventory();
 
 // Example: Add an item (run in the console or trigger via a button)
 addItem("can");
-addItem("can");
+addItem("page");
+addItem("dagger");
