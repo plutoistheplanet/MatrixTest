@@ -1,7 +1,7 @@
 let playerHealth = 100;
 let maxPlayerHealth = 100;
 
-const speed = 50;  // Adjust typing speed here (milliseconds)
+const speed = 75;  // Adjust typing speed here (milliseconds)
 
 // function typeWriter(targetID ,text) {
 //   let index = 0; // Reset the index for each new text
@@ -78,7 +78,7 @@ function renderInventory() {
 function addItem(itemName) {
     const emptySlot = inventory.indexOf(null);
     if (emptySlot !== -1) {
-        document.getElementById("popup").style.display = "flex";
+        //document.getElementById("popup").style.display = "flex";
         inventory[emptySlot] = items[itemName]; // Add item image path
         renderInventory();
     } else {
