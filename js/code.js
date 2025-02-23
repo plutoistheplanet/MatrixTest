@@ -1,7 +1,7 @@
 let playerHealth = 100;
 let maxPlayerHealth = 100;
 
-const speed = 75;  // Adjust typing speed here (milliseconds)
+const speed = 45;  // Adjust typing speed here (milliseconds)
 
 // function typeWriter(targetID ,text) {
 //   let index = 0; // Reset the index for each new text
