@@ -1,19 +1,7 @@
 let playerHealth = 100;
 let maxPlayerHealth = 100;
 
-const speed = 45;  // Adjust typing speed here (milliseconds)
-
-// function typeWriter(targetID ,text) {
-//   let index = 0; // Reset the index for each new text
-//   function type() {
-//     if (index < text.length) {
-//       document.getElementById(targetID).innerHTML += text.charAt(index);
-//       index++;
-//       setTimeout(type, speed);
-//     }
-//   }
-//   type(); // Start typing
-// }
+const speed = 45;  //time between each character
 function typeWriter(targetID, text) {
   const targetElement = document.getElementById(targetID);
   targetElement.innerHTML = ""; // Clear content before typing
